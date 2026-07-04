@@ -1,0 +1,12 @@
+queue_rules:
+  - name: default
+
+pull_request_rules:
+  - name: Queue PR
+
+    conditions:
+      - "#approved-reviews-by>=1"
+
+    actions:
+      queue:
+        name: default

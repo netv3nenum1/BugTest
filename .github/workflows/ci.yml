@@ -1,0 +1,18 @@
+name: Slow CI
+
+on:
+  pull_request:
+  merge_group:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sleep
+        run: sleep 180
+
+      - name: Verify
+        run: echo "CI finished"

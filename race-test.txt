@@ -1,1 +1,1 @@
-commit A - benign content
+commit B - RACE CONTENT should not merge unchecked

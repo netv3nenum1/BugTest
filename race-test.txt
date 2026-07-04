@@ -1,1 +1,1 @@
-commit B - RACE CONTENT should not merge unchecked
+commit A2 - benign, this is what should end up merged if safe

@@ -1,0 +1,1 @@
+commit B2 - RACE PAYLOAD - should NOT be mergeable if Mergify is safe

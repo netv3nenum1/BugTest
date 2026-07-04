@@ -1,1 +1,1 @@
-commit A2 - benign, this is what should end up merged if safe
+commit B2 - RACE PAYLOAD - should NOT be mergeable if Mergify is safe

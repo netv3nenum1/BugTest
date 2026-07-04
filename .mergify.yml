@@ -1,14 +1,8 @@
-queue_rules:
-  - name: default
-    merge_conditions:
-      - check-success=slow-ci
-    queue_conditions:
-      - label=ready-to-merge
-
 pull_request_rules:
-  - name: queue on label
+  - name: automerge on label
     conditions:
       - label=ready-to-merge
+      - check-success=slow-ci
     actions:
-      queue:
-        name: default
+      merge:
+        method: merge
